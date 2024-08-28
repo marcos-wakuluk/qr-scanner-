@@ -1,4 +1,3 @@
-import React from "react";
 import { MantineProvider } from "@mantine/core";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Cards from "./components/Cards";
@@ -14,7 +13,7 @@ const theme = {
   fontFamily: "Open Sans, sans-serif",
   primaryColor: "blue",
   colors: {
-    dark: ["#1c1c1c", "#2e2e2e", "#333333", "#444444", "#555555", "#666666", "#777777", "#888888", "#999999", "#aaaaaa"],
+    dark: ["#1c1c1c", "#2e2e2e", "#333333", "#444444", "#555555", "#666666", "#777777", "#888888", "#999999", "black"],
     blue: ["#003f5c", "#2f4b7c", "#4f6d7a", "#6e8b8b", "#8f9b9c", "#a0b8b1", "#d1e0e0", "#ffffff"],
   },
   components: {},

@@ -1,5 +1,4 @@
-import React from "react";
-import { Card, Text, useMantineTheme } from "@mantine/core";
+import { Box, Card, Image, Text, useMantineTheme } from "@mantine/core";
 import { useNavigate } from "react-router-dom";
 
 function QRGenerator() {
@@ -17,13 +16,16 @@ function QRGenerator() {
         justifyContent: "center",
         alignItems: "center",
         minHeight: "100vh",
-        backgroundColor: theme.colors.dark[0],
+        backgroundColor: theme.colors.dark[9],
         padding: "5%",
         gap: "5%",
         flexWrap: "wrap",
         boxSizing: "border-box",
       }}
     >
+      <Box style={{ position: "absolute" }}>
+        <Image src="src/assets/marcio-wakuluk-producciones.png" height={700} />
+      </Box>
       <Card
         shadow="md"
         padding="xl"
@@ -31,6 +33,7 @@ function QRGenerator() {
           width: "300px",
           height: "168.77px",
           cursor: "pointer",
+          opacity: "0.8",
           backgroundColor: theme.colors.dark[8],
           borderRadius: theme.radius.md,
           transition: "transform 0.3s ease, box-shadow 0.3s ease",
@@ -61,6 +64,7 @@ function QRGenerator() {
           height: "168.77px",
           maxWidth: "300px",
           cursor: "pointer",
+          opacity: "0.8",
           backgroundColor: theme.colors.dark[8],
           borderRadius: theme.radius.md,
           transition: "transform 0.3s ease, box-shadow 0.3s ease",
